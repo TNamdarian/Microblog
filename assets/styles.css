@@ -13,8 +13,7 @@ body {
 
 /* .................................. Navbar  */
 .navbar {
-    max-width: 640px;
-    margin: 50px auto;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -32,6 +31,11 @@ body {
     margin-right: 30px;
     font-size: 24px;
     color: #F0A500;
+    padding-left: 10px;
+}
+
+.logo {
+    padding-left: 50px;
 }
 
 .navbar_navigation {
@@ -44,6 +48,7 @@ body {
 
 .navbar_navigation_item {
     margin-left: 50px;
+    padding: 50px;
 }
 
 .navbar_link {
@@ -109,4 +114,49 @@ body {
 .entry_content {
     font-size: 16px;
     line-height: 150%;
+}
+
+/* .................................. Footer  */
+.footer {
+    background-color: #082032;
+    color: #F0A500;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid #000000;
+    font-size: 12px;
+}
+
+.footer_content {
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.footer_item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer_item:hover {
+    color: white;
 }
