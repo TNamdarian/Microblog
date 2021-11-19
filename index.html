@@ -21,6 +21,13 @@
     <main>
         <Section>
             <h1>Add new entry</h1>
+            <form action="/entry">
+                <div class="form_input">
+                    <label for="entry">Entry contents</label>
+                    <textarea name="content" id="entry" placeholder="Type your entry here..."></textarea>
+                </div>
+                <button type="submit">Add entry</button>
+            </form>
         </Section>
         <section>
             <h1>Recent Posts</h1>
@@ -29,7 +36,7 @@
                     <h2>A bit of a chill day today</h2>
                     <time datetime="24-10-2019">Oct 24</time>
                 </div>
-                <p>Today I couldn't do much programming, but that's OK! Can't be too awesome every day!</p>
+                <p>Today I couldn't do much coding, but that's OK! Can't be always awesome!</p>
             </article>
         </section>
     </main>
