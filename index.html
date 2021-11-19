@@ -12,32 +12,32 @@
 <body>
     <header class="navbar">
         <div class="navbar_brand">
-            <img class="logo" src="assets/images/blog-comment.png" alt="Blog logo" />
+            <img class="navbar_logo" src="assets/images/blog-comment.png" alt="Blog logo" />
+            <h1 class="navbar_logo">Blog</h1>
         </div>
-        <ul class="navbar_navigation">
-            <li class="navbar_navigation-item"><a href="#" class="navbar_link">Recent</a></li>
-            <li class="navbar_navigation-item"><a href="#" class="navbar_link">Calendar</a></li>
+        <ul class=" navbar_navigation">
+            <li class="navbar_navigation_item"><a href="#" class="navbar_link">Recent</a></li>
+            <li class="navbar_navigation_item"><a href="#" class="navbar_link">Calendar</a></li>
         </ul>
     </header>
-    <main>
+    <main class="main">
         <Section>
             <h1>Add new entry</h1>
-            <form action="/entry">
+            <form class="form" action="/entry" method="POST">
                 <div class="form_input">
-                    <label for="entry">Entry contents</label>
-                    <textarea name="content" id="entry" placeholder="Type your entry here..."></textarea>
+                    <textarea name="content" id="entry" class="form_textarea" aria-label="Entry contents" placeholder="Type your entry here..."></textarea>
                 </div>
-                <button type="submit">Add entry</button>
+                <button type="submit" class="form_submit">Add entry</button>
             </form>
         </Section>
         <section>
             <h1>Recent Posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of a chill day today</h2>
-                    <time datetime="24-10-2019">Oct 24</time>
+                    <h2 class="entry_title">A bit of a chill day today</h2>
+                    <time class="entry_date" datetime="24-10-2019"> • Oct 24</time>
                 </div>
-                <p>Today I couldn't do much coding, but that's OK! Can't be always awesome!</p>
+                <p class="entry_content">Today I couldn't do much coding, but that's OK! Can't be always awesome!</p>
             </article>
         </section>
     </main>

@@ -1,4 +1,112 @@
-.logo {
-    width: 50px;
-    height: 50px;
+/* .................................. Body  */
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* .................................. Navbar  */
+.navbar {
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    background-color: #082032;
+}
+
+.navbar_brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo {
+    margin-right: 30px;
+    font-size: 24px;
+    color: #F0A500;
+}
+
+.navbar_navigation {
+    display: flex;
+    flex-direction: row;
+    color: #F0A500;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar_navigation_item {
+    margin-left: 50px;
+}
+
+.navbar_link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* .................................. Form  */
+.main {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.form_textarea {
+    width: 450px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #f3f6f6;
+    margin-bottom: 10px;
+}
+
+.form_submit {
+    background-color: #082032;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: #F0A500;
+}
+
+.form_submit:hover {
+    background-color: #F0A500;
+    color: #082032;
+}
+
+/* .................................. Blog Entries  */
+.entry {
+    margin-top: 50px;
+}
+
+.entry_title {
+    display: inline;
+    font-size: 18px;
+}
+
+.entry_date {
+    color: #334756;
+}
+
+.entry_content {
+    font-size: 16px;
+    line-height: 150%;
 }
